@@ -22,33 +22,36 @@ Python uses the `print()` function to display output.
 print("Hello! to everyone out there")
 print("Google Colab")
 
+
 Python is an interpreted language, which means it executes code line by line.
 
-**Case Sensitivity Example**
+Case Sensitivity Example
 print("hello")
-Print("hello")    # This will cause an error because Python is case-sensitive
+Print("hello")    # Error: Python is case-sensitive
 
 
-Error example:
+Error Output:
 
 NameError: name 'Print' is not defined
 
-**Comments in Python**
+Comments in Python
 
-Comments help describe code and are ignored during execution.
+Comments help explain code and are ignored during execution.
 
 Single-line comment
-# This is a comment
+# This is a comment  
+( we uae hastag for single line comment)
 
 Multi-line comment
 """
 This is a
 multi-line comment
 """
+(for multy line comment we use """[comment of multy lines] """)
 
 **Variables in Python**
 
-A variable is a name used to store a value.
+A variable is a name used to store a value in memory.
 
 Example:
 x = 10
@@ -67,39 +70,44 @@ print("Sum of both values is:", sum)
 
 **Rules for Naming Variables**
 
-1.Must start with a letter or underscore (_)
+Must start with a letter or underscore (_)
 
-2.Cannot start with a number
+Cannot start with a number
 
-3.Case-sensitive (abc is different from ABC)
+Case-sensitive (abc is different from ABC)
 
-4.Cannot use Python keywords (if, for, while, etc.)
+Cannot use Python keywords (if, for, while, etc.)
 
-5.Cannot contain spaces
+Cannot contain spaces
 
-6.Cannot contain special characters like @, #, %, $
+Cannot include special characters like @, #, %, $
 
-Valid examples:
+Valid Examples
 abc = 50
 _name = "Siri"
 a_1 = "value"
 degmngjhabcnvjdsnvdjvvhv_jhnbsdjcnsdlkjncdlikcndslknc = 50
 
-Invalid examples:
+Invalid Examples
 8ab = 200          # SyntaxError
 ab@de = 59         # SyntaxError
 my variable = 10   # SyntaxError due to space
 
 **Data Types in Python**
 
-Python automatically detects the type of value stored.
+Python automatically determines the type of the value stored.
 
-Common data types:
-1.Integer
-2.Float
-3.String
-4.Boolean
-5.Complex
+Common Data Types
+
+Integer
+
+Float
+
+String
+
+Boolean
+
+Complex
 
 Examples
 a = 100
@@ -117,17 +125,22 @@ type(e)        # bool
 h = 5 + 9j
 type(h)        # complex
 
-Invalid complex example
+Invalid Complex Example
 m = 10 + 2m        # SyntaxError
 
-#Only j is allowed for imaginary numbers in complex numbers.
 
+Only j is valid for imaginary numbers in Python.
 
 **Summary**:
 
-Day 2 covered essential Python concepts:
+Day 2 covered essential Python fundamentals:
+
 Using print() to display output
+
 Understanding Python’s case sensitivity
+
 Writing single-line and multi-line comments
+
 Declaring and naming variables correctly
-Identifying basic data types
+
+Identifying Python’s basic data types
