@@ -8,13 +8,13 @@ description: "Day 2 covers print statements, case sensitivity, comments, variabl
 
 ## Introduction
 
-Day 2 focused on the fundamental building blocks of writing and understanding Python code. The session covered how to display output, how Python treats uppercase and lowercase differently, how comments work, how variables are created, and how basic data types behave. These basics form the foundation for writing any meaningful Python program.
+Day 2 focused on the fundamental building blocks of writing and understanding Python code. The session covered how to display output using the `print()` function, how Python treats uppercase and lowercase differently, how comments work, how variables are defined, and how basic data types behave. These concepts form the foundation of all Python programs.
 
 ---
 
 ## Printing Output in Python
 
-Python uses the `print()` function to display output.
+Python uses the `print()` function to display output on the screen.
 
 ### Example:
 
@@ -22,10 +22,14 @@ Python uses the `print()` function to display output.
 print("Hello! to everyone out there")
 print("Google Colab")
 
+Python is an interpreted language, meaning it executes code line by line.
 
-Python is an interpreted language, which means it executes code line by line.
+Case Sensitivity in Python
 
-Case Sensitivity Example
+Python is case-sensitive.
+print and Print are treated as different identifiers.
+
+Example:
 print("hello")
 Print("hello")    # Error: Python is case-sensitive
 
@@ -34,24 +38,22 @@ Error Output:
 
 NameError: name 'Print' is not defined
 
-Comments in Python
+**Comments in Python**
 
 Comments help explain code and are ignored during execution.
 
 Single-line comment
-# This is a comment  
-( we uae hastag for single line comment)
+# This is a comment
 
 Multi-line comment
 """
 This is a
 multi-line comment
 """
-(for multy line comment we use """[comment of multy lines] """)
 
 **Variables in Python**
 
-A variable is a name used to store a value in memory.
+A variable is a name that stores a value.
 
 Example:
 x = 10
@@ -82,22 +84,22 @@ Cannot contain spaces
 
 Cannot include special characters like @, #, %, $
 
-Valid Examples
+Valid Examples:
 abc = 50
 _name = "Siri"
 a_1 = "value"
 degmngjhabcnvjdsnvdjvvhv_jhnbsdjcnsdlkjncdlikcndslknc = 50
 
-Invalid Examples
+Invalid Examples:
 8ab = 200          # SyntaxError
 ab@de = 59         # SyntaxError
 my variable = 10   # SyntaxError due to space
 
 **Data Types in Python**
 
-Python automatically determines the type of the value stored.
+Python automatically determines the type of the value stored in a variable.
 
-Common Data Types
+Common Data Types:
 
 Integer
 
@@ -109,7 +111,7 @@ Boolean
 
 Complex
 
-Examples
+Examples:
 a = 100
 type(a)        # int
 
@@ -125,22 +127,21 @@ type(e)        # bool
 h = 5 + 9j
 type(h)        # complex
 
-Invalid Complex Example
+Invalid Complex Example:
 m = 10 + 2m        # SyntaxError
 
+Only j is allowed for representing imaginary numbers in Python.
 
-Only j is valid for imaginary numbers in Python.
-
-**Summary**:
+**Summary**
 
 Day 2 covered essential Python fundamentals:
 
-Using print() to display output
+Using print() for output
 
-Understanding Python’s case sensitivity
+Understanding case sensitivity
 
 Writing single-line and multi-line comments
 
-Declaring and naming variables correctly
+Declaring variables and understanding naming rules
 
-Identifying Python’s basic data types
+Working with Python’s basic data types
