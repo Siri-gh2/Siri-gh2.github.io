@@ -89,8 +89,9 @@ class Solution:
 * ## 🚀 Reflection
 * Today was about building strong fundamentals.
 * I improved in: * logical thinking * cleaner code * avoiding brute-force * using slicing and loops efficiently * recognizing when dynamic programming is needed Kadane’s Algorithm was the main breakthrough — I shifted from brute-force mindset to **update-based thinking**.
-*
-*
+
+
+
 *    --- ## 📌 Notes to Future Me * Always check if the problem can be optimized using previous results. 
 * Patterns > Random practice.
 *  * Use slicing smartly, not forcefully.
