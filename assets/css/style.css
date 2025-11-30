@@ -1,60 +1,54 @@
-/* ------------------------------
-   GLOBAL LAYOUT FIX
------------------------------- */
+/* PAGE WRAPPER */
 .main-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-
-/* ------------------------------
-   FIXED LEFT SIDEBAR
------------------------------- */
-:root {
-  --sidebar-width: 300px;
-}
-
-/* Sidebar styling */
+/* SIDEBAR */
 .left-sidebar {
-  position: fixed;
-  top: 80px; /* adjust if your header is taller or shorter */
-  left: 0;
-  width: var(--sidebar-width);
-  height: calc(100vh - 80px);
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
   padding: 20px;
-  background: #fff;
-  border-right: 1px solid rgba(0,0,0,0.1);
-  overflow-y: auto;
-  z-index: 10;
+  border-radius: 8px;
+  height: fit-content;
 }
 
-/* ------------------------------
-   CONTENT AREA (Push to right)
------------------------------- */
+/* CONTENT AREA */
 .content-area {
-  margin-left: var(--sidebar-width);
-  padding: 40px;
-  width: calc(100% - var(--sidebar-width));
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
 }
 
+/* BLOG POST SPACING */
+.post-content h1,
+.post-content h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
 
-/* ------------------------------
-   RESPONSIVE FIX — MOBILE VIEW
------------------------------- */
-@media (max-width: 900px) {
+.post-content p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+  font-size: 17px;
+}
 
-  .left-sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    top: 0;
-    border-right: none;
+pre,
+code {
+  font-size: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .main-container {
+    grid-template-columns: 1fr;
   }
-
-  .content-area {
-    margin-left: 0;
-    width: 100%;
-    padding: 20px;
+  .left-sidebar {
+    order: 2;
   }
 }
