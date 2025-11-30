@@ -1,10 +1,19 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
   <div class="wrapper">
     <div class="footer-col-wrapper">
+
+      <!-- Left side: site description -->
       <div class="footer-col footer-col-1">
         <p>{{ site.description | escape }}</p>
       </div>
+
+      <!-- Right side: copyright -->
+      <div class="footer-col footer-col-2" style="text-align: right;">
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
+      </div>
+
     </div>
   </div>
 </footer>
