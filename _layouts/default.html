@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- SEO -->
+  {% seo %}
+
+  <!-- Minima base CSS -->
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <!-- Custom CSS override -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1 class="site-title">{{ site.title }}</h1>
+  </header>
+
+  <!-- MAIN 2-COLUMN LAYOUT -->
+  <div class="container">
+    <!-- LEFT SIDEBAR -->
+    <aside class="left-sidebar">
+      {% include sidebar.html %}
+    </aside>
+
+    <!-- CONTENT AREA -->
+    <main class="content-area">
+      {{ content }}
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+
+</body>
+</html>
