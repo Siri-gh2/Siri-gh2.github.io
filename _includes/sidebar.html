@@ -1,20 +1,35 @@
-<div class="sidebar">
-  <h2 class="sidebar-title">About Me</h2>
-  <p>I’m Korupolu Siri, a Computer Science student learning Python, web development, and competitive programming.</p>
+<div class="profile">
+  <!-- Add a small profile image. Put your image at assets/images/avatar.jpg or change the path -->
+  <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-photo" />
+  <h3 class="profile-name">{{ site.author.name }}</h3>
+  <p class="profile-role">{{ site.author.bio }}</p>
 
-  <h2 class="sidebar-title">Skills</h2>
-  <ul>
-    <li>Programming Languages: C++, C, Python, JavaScript, HTML, CSS</li>       
-    <li>HTML, CSS</li>
-    <li>Libraries/Frameworks: React, Bootstrap, Node, Express, StyledComponents, Tailwind css</li>
-    <li>Databases: MySQL, MongoDB, SQL Server</li>
-    <li>Tools / Platforms: VS Code, Netlify, Vercel, GitHub</li>
-  </ul>
-  
-  <h2 class="sidebar-title">Links</h2>
+  <div class="profile-links">
+    <a href="{{ site.author.github | default:'#' }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+    <a href="{{ site.author.linkedin | default:'#' }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+</div>
+
+<nav class="sidebar-nav">
+  <h4>Quick Links</h4>
   <ul>
     <li><a href="https://github.com/Siri-gh2">GitHub</a></li>
     <li><a href="https://www.linkedin.com/in/korupolu-siri-247653296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
     <li><a href = "https://siriportfolio.vercel.app/">Portfolio</a></li>
   </ul>
-</div>
+</nav>
+
+<section class="sidebar-skills">
+  <h4>Skills</h4>
+  <ul>
+    <li>Programming Languages: C++, C, Python, JavaScript, HTML, CSS</li>       
+    <li>Libraries/Frameworks: React, Bootstrap, Node, Express, StyledComponents, Tailwind css</li>
+    <li>Databases: MySQL, MongoDB, SQL Server</li>
+    <li>Tools / Platforms: VS Code, Netlify, Vercel, GitHub</li>
+  </ul>
+</section>
+
+<section class="sidebar-cta">
+  <h4>Latest</h4>
+  <p><a href="{{ site.baseurl }}/{{ site.posts | first.url }}">Read latest post</a></p>
+</section>
