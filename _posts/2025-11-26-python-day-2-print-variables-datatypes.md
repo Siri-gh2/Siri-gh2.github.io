@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python – Day 2: Printing, Comments, Variables, and Data Types"
-date: 2025-11-21
+date: 2025-11-26
 categories: python
 description: "Day 2 covers print statements, case sensitivity, comments, variable rules, and core Python data types with examples and errors."
 ---
