@@ -1,3 +1,24 @@
-title: "Siri - Tech Notes"
-description: "My learning journal in Python, development, and projects."
+title: "Siri Korupolu"
+description: "My coding journey, practice notes, and software development blog."
 theme: minima
+
+# Basic settings
+author:
+  name: "Siri Korupolu"
+  bio: "Computer Science student | Learning Python, DSA, Web Dev"
+  github: "https://github.com/Siri-gh2"
+  linkedin: "https://www.linkedin.com/in/korupolu-siri-247653296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+
+# Enable sidebar
+show_excerpts: true
+
+# Markdown & plugins
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalinks
+permalink: /:categories/:year/:month/:day/:title/
