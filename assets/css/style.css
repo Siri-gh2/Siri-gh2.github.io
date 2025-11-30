@@ -1,0 +1,61 @@
+/* Layout */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Sidebar */
+.left-sidebar {
+  width: 250px;
+  padding-right: 20px;
+}
+
+.sidebar-title {
+  margin-bottom: 6px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+/* Content area */
+.content-area {
+  flex: 1;
+}
+
+/* Blog card styling */
+.post-list > li {
+  list-style: none;
+  padding: 20px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.post-list > li:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.site-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #eee;
+}
