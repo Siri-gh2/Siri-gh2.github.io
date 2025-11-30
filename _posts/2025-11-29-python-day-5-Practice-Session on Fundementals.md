@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python – Day 5: Problem-Solving Practice (Maximum Subarray & CodeChef Beginner Set)"
+title: "Python – Day 5: Problem-Solving Practice"
 date: 2025-11-29
 categories: python
 description: "Day 5 focuses on structured problem-solving by completing CodeChef beginner problems to strengthen fundamentals."
