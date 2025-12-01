@@ -27,7 +27,15 @@
   </ul>
 </section>
 
-<section class="sidebar-cta">
+<section class="sidebar-latest">
   <h4>Latest</h4>
-  <p><a href="{{ site.baseurl }}/{{ site.posts | first.url }}">Read latest post</a></p>
+  <ul>
+    {% assign latest_post = site.posts | first %}
+    <li>
+      <a href="{{ latest_post.url | relative_url }}">
+        {{ latest_post.title }}
+      </a>
+    </li>
+  </ul>
 </section>
+
