@@ -1,24 +1,18 @@
-title: "Korupolu Siri"
-description: "My coding journey, practice notes, and software development blog."
-theme: minima
+# _config.yml
+title:  "Korupolu Siri"
+description: "My coding journey — Python learning notes, problem solving, and projects."
+baseurl: "" # keep empty for user site
+url: "https://siri-gh2.github.io"
 
-# Basic settings
 author:
   name: "Korupolu Siri"
-  bio: "Computer Science student | Learning Python, Web Dev , DSA"
+  bio: "Computer Science student | Learning Python & Web Dev"
   github: "https://github.com/Siri-gh2"
   linkedin: "https://www.linkedin.com/in/korupolu-siri-247653296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
 
-# Enable sidebar
-show_excerpts: true
-
-# Markdown & plugins
+theme: minima
 markdown: kramdown
 highlighter: rouge
-
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-
-# Permalinks
 permalink: /:categories/:year/:month/:day/:title/
