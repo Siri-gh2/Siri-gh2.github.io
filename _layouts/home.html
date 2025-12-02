@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home-hero">
+  <h2>Welcome — I'm {{ site.author.name }}</h2>
+  <p class="hero-sub">Learning Python step-by-step. Notes, solutions, and small projects.</p>
+</div>
+
+<section class="posts-wrap">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-card">
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • {{ post.categories | join: ", " }}</div>
+        {% if post.excerpt %}
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
