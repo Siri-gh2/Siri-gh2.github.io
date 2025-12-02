@@ -1,3 +1,4 @@
+<!-- _includes/sidebar.html -->
 <div class="sidebar-profile">
   <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-photo">
   <h3 class="profile-name">{{ site.author.name }}</h3>
@@ -23,6 +24,9 @@
   {% assign latest_post = site.posts | first %}
   {% if latest_post %}
     <p><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a></p>
+    <!-- Optional date:
+    <small class="muted">{{ latest_post.date | date: "%b %-d, %Y" }}</small>
+    -->
   {% else %}
     <p>No posts yet.</p>
   {% endif %}
@@ -33,7 +37,7 @@
   <ul>
     {% assign cats = site.categories %}
     {% for cat in cats %}
-      <li><a href="{{ site.baseurl }}/categories/{{ cat[0] | slugify }}/">{{ cat[0] }} ({{ cat[1].size }})</a></li>
+      <li><a href="{{ '/' | relative_url }}categories/{{ cat[0] | slugify }}/">{{ cat[0] }} ({{ cat[1].size }})</a></li>
     {% endfor %}
   </ul>
 </section>
