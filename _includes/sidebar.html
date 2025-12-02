@@ -1,52 +1,39 @@
-<div class="profile">
-  <img
-    src="/assets/images/avatar.jpg"
-    alt="{{ site.author.name | default: 'Author' }}"
-    class="profile-photo"
-  />
+<div class="sidebar-profile">
+  <img src="{{ '/assets/images/avatar.jpg' | relative_url }}" alt="{{ site.author.name }}" class="profile-photo">
+  <h3 class="profile-name">{{ site.author.name }}</h3>
+  <p class="profile-bio">{{ site.author.bio }}</p>
 
-  <h3 class="profile-name">{{ site.author.name | default: 'Your Name' }}</h3>
-  <p class="profile-role">{{ site.author.bio | default: 'Your short bio goes here.' }}</p>
-
-  <div class="profile-links" role="navigation" aria-label="Author links">
-    <a href="{{ site.author.github | default: '#' }}" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="{{ site.author.linkedin | default: '#' }}" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
+  <div class="profile-links">
+    <a href="{{ site.author.github }}" target="_blank" rel="noopener">GitHub</a>
+    <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </div>
 
-<nav class="sidebar-nav" aria-label="Quick links">
-  <h4>Quick Links</h4>
+<nav class="sidebar-nav">
+  <h4>Navigation</h4>
   <ul>
-    <li><a href="https://siriportfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
+    <li><a href="{{ '/' | relative_url }}">Blog</a></li>
+    <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+    <li><a href="{{ '/about/' | relative_url }}">About</a></li>
   </ul>
 </nav>
 
-<section class="sidebar-skills" aria-label="Skills">
-  <h4>Skills</h4>
-  <ul>
-    <li>Programming Languages: C++, C, Python, JavaScript, HTML, CSS</li>
-    <li>Libraries/Frameworks: React, Bootstrap, Node, Express, Styled-Components, Tailwind CSS</li>
-    <li>Databases: MySQL, MongoDB, SQL Server</li>
-    <li>Tools / Platforms: VS Code, Netlify, Vercel, GitHub</li>
-  </ul>
+<section class="sidebar-latest">
+  <h4>Latest</h4>
+  {% assign latest_post = site.posts | first %}
+  {% if latest_post %}
+    <p><a href="{{ latest_post.url | relative_url }}">{{ latest_post.title }}</a></p>
+  {% else %}
+    <p>No posts yet.</p>
+  {% endif %}
 </section>
 
-<section class="sidebar-latest" aria-label="Latest post">
-  <h4>Latest</h4>
+<section class="sidebar-cats">
+  <h4>Categories</h4>
   <ul>
-    {% if site.posts and site.posts.size > 0 %}
-      {% assign latest_post = site.posts | first %}
-      <li>
-        <a href="{{ latest_post.url | relative_url }}">
-          {{ latest_post.title }}
-        </a>
-      </li>
-    {% else %}
-      <li>No posts yet</li>
-    {% endif %}
+    {% assign cats = site.categories %}
+    {% for cat in cats %}
+      <li><a href="{{ site.baseurl }}/categories/{{ cat[0] | slugify }}/">{{ cat[0] }} ({{ cat[1].size }})</a></li>
+    {% endfor %}
   </ul>
 </section>
