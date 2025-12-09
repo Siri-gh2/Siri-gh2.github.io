@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python – Day 8: Sets, Dictionaries, and Functions"
-date: 2025-03-12
+date: 2025-12-03
 categories: python
 description: "Day 8 covers Sets, Set operations, Dictionaries, key–value access, mutability, and function creation with return values."
 ---
