@@ -6,7 +6,7 @@ categories: python
 description: "Understanding Encapsulation, Access Modifiers, Getter & Setter methods, and real-world OOP modeling."
 ---
 
-# Python – Day 11: Object-Oriented Programming (OOP) – The Four Pillars (Part 1)
+# OOPS Day-2
 
 Today marks the beginning of exploring **Object-Oriented Programming (OOP)** in Python.  
 OOP helps in writing structured, reusable, secure, and scalable code.  
