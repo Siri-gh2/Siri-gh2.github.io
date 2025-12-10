@@ -6,7 +6,7 @@ categories: python
 description: "Understanding the fundamentals of Object-Oriented Programming — classes, objects, attributes, methods, constructors, and hands-on examples."
 ---
 
-## Introduction
+## OOPS Day-1
 
 Today’s session introduced the basics of **Object-Oriented Programming (OOPS)** in Python.  
 OOPS helps organize complex programs into simple, reusable, logical components.
