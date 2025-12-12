@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python – Day 13: Inheritance (OOP Pillar 2)"
+title: "Python – Day 12: Inheritance (OOP Pillar 2)"
 date: 2025-12-10
 categories: python
 description: "Understanding Inheritance, types of inheritance, method overriding, and code reusability in OOP."
