@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python OOPs – Self-Assessment Quiz"
-date: 2025-12-12
+date: 2025-12-13
 categories: python
 description: "A structured quiz to test understanding of Encapsulation, Inheritance, Polymorphism, Abstraction, and class-based design."
 ---
