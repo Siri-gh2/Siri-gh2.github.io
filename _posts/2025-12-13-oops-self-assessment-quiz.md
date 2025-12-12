@@ -8,7 +8,7 @@ description: "A structured quiz to test understanding of Encapsulation, Inherita
 
 # Python OOPs – Self-Assessment Quiz
 
-To reinforce the concepts learned across **OOP Day 11, 12, and 13**, here is a structured self-assessment quiz designed to evaluate your understanding of:
+To reinforce the concepts learned across **OOPs Concepts**, here is a structured self-assessment quiz designed to evaluate your understanding of:
 
 - Encapsulation  
 - Access modifiers (public, protected, private)  
