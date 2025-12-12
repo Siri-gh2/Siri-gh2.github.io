@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Python – Day 14: OOP Concepts – Abstraction"
-date: 2025-12-14
+date: 2025-12-11
 categories: python
 description: "Understanding Abstraction in Python OOP using ABC module, abstract classes, abstract methods, and real-world examples."
 ---
 
-# OOPs Day-5
+# OOPs Day-4(Abstraction)
 
 Today’s session covered the **fourth pillar of OOP — Abstraction**.  
 Abstraction helps us hide internal implementation details and show only what is necessary to the user.  
