@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python – Day 14: Polymorphism, Method Overloading & Method Overriding"
+title: "Python – Day 13: Polymorphism, Method Overloading & Method Overriding"
 date: 2025-12-11
 categories: python
 description: "Understanding Polymorphism, Method Overloading, and Method Overriding with examples and practical demonstrations."
