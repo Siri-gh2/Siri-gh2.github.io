@@ -85,12 +85,9 @@ Understanding OOP deeply is **non-negotiable** if you want to build:
 
 This quiz ensures you’re not just reading code — you’re *thinking* like an object-oriented developer.
 
----
-
-If you'd like, I can also create:
-
-✔ A **PDF version** of the quiz  
-✔ A **solution post** with answers + explanations  
-✔ A **visual OOP revision sheet**  
-
-Just tell me what you want next!
+📌 How to Use It Effectively
+Don’t open code while attempting — treat it like a test.
+Write down your answers on paper or a text file, then compare with your own code (or documentation).
+If you get something wrong — revisit the related blog post (Sets, Dicts, Functions etc.) and retry.
+Try the quiz again after some time — you might see improvement.
+Happy learning!
