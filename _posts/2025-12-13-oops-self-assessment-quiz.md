@@ -25,7 +25,7 @@ To reinforce the concepts learned across **OOPs Concepts**, here is a structured
 
 Click below to attempt the quiz:
 
-👉 **[OOP Concepts – Self-Assessment Quiz](https://forms.gle/HvQTQ7tfHodDGKdU6){:target="_blank"}**
+👉 **[OOP Concepts – Self-Assessment Quiz](https://forms.gle/TDMMMBgLRTwwhbaL6){:target="_blank"}**
 
 The quiz contains conceptual and code-based questions to test how well you understand object-oriented thinking in Python.
 
