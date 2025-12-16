@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python – Day 14: Hands-on Practice (Loops, Functions, Containers & Calendar)"
+title: "Python – Day 15: Hands-on Practice (Loops, Functions, Containers & Calendar)"
 date: 2025-12-15
 categories: python
 description: "Practical coding exercises covering loops, functions, lists, sets, duplicate handling, number logic, and calendar module."
