@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python – Day 17: Hands-on OOP Practice (Hybrid Inheritance)"
-date: 2025-12-13
+date: 2025-12-17
 categories: python
 description: "Hands-on practice with Object-Oriented Programming in Python, focusing on Hybrid Inheritance using real-world class relationships."
 ---
