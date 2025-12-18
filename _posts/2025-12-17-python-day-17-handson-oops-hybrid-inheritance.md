@@ -6,7 +6,7 @@ categories: python
 description: "Hands-on practice with Object-Oriented Programming in Python, focusing on Hybrid Inheritance using real-world class relationships."
 ---
 
-## Hands-On
+## Hands-On Practice
 
 Day 17 focused on **hands-on Object-Oriented Programming (OOP)** practice.  
 The goal was not theory, but **implementing complex inheritance structures** to clearly understand how Python handles multiple parent classes and shared attributes.
