@@ -6,7 +6,9 @@ categories: python oops
 description: "Hands-on OOP practice using classes, encapsulation, and a login authentication system with attempt tracking."
 ---
 
-## 📌 Overview
+## Hands -On Session
+
+ 📌 Overview
 
 This session focused on **practical Object-Oriented Programming (OOP)** using Python.  
 Instead of theory, the emphasis was on **writing working classes**, understanding **relationships between them**, and applying concepts to **real-world problems**.
