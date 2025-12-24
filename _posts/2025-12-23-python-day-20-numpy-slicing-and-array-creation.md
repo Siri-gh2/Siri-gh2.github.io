@@ -6,14 +6,12 @@ categories: python numpy
 description: "Understanding NumPy slicing across dimensions and learning built-in methods to create structured arrays like zeros, ones, identity, and eye matrices."
 ---
 
-## Introduction
+## NumPy Slicing
 
 Today’s session focused on **NumPy slicing techniques** and **special array creation methods**.  
 These concepts are critical for efficient data manipulation, matrix operations, and scientific computing.
 
 ---
-
-## NumPy Slicing
 
 Slicing allows extracting **specific portions of arrays** without loops.  
 The syntax follows:
@@ -23,7 +21,7 @@ array[start : stop : step]
 
 ---
 
-## 🔹 1D Array Slicing
+** 1D Array Slicing**
 
 ```python
 import numpy as np
