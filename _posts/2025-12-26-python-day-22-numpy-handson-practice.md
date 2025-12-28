@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python – Day 23: NumPy Hands-on Practice"
+title: "Python – Day 22: NumPy Hands-on Practice"
 date: 2025-12-26
 categories: python numpy
 description: "Hands-on practice with NumPy arrays, dimensions, indexing, slicing, reshaping, random values, and real-world problem solving."
