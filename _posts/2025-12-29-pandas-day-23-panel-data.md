@@ -6,7 +6,7 @@ categories: pandas python data-analysis
 description: "Understanding Pandas, Panel Data concepts, Series, DataFrames, and why Pandas is powerful for real-world data."
 ---
 
-# 🐼 Pandas – Panel Data 
+#  Pandas – Panel Data 
 
 Today I started learning **Pandas**, one of the most powerful Python libraries for **data analysis and data manipulation**.
 
@@ -55,7 +55,7 @@ import pandas as pd
 s = pd.Series([10, 20, 30, 40])
 print(s)
 
-2.** DataFrame**
+    2.** DataFrame**
 
 Two-dimensional labeled data
 
@@ -75,7 +75,7 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 
-Why Pandas is Powerful
+**Why Pandas is Powerful**
 
 Easy data loading (CSV, Excel, JSON, SQL)
 
