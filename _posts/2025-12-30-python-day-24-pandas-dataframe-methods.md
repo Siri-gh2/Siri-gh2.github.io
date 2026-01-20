@@ -33,8 +33,10 @@ data = {
     "City": ["Delhi", "Mumbai", "Pune", "Delhi"]
 }
 
+---
 
-**df.head()**
+
+### df.head()
 Purpose
 
 Displays the first 5 rows of the DataFrame by default.
@@ -51,12 +53,11 @@ df.head()
 
 You can also specify the number of rows:
 
-python
-Copy code
+
 df.head(2)
 
 
-
+---
 **df.tail()**
 Purpose
 Displays the last 5 rows of the DataFrame by default.
