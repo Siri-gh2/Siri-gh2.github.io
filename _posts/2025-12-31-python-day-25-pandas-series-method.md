@@ -210,4 +210,4 @@ dtype: int64
 
 - Model training
 
-- Small fundamentals → Large impact.
+**Small fundamentals → Large impact.**
