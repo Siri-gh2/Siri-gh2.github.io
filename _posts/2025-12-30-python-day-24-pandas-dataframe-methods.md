@@ -33,135 +33,145 @@ data = {
     "City": ["Delhi", "Mumbai", "Pune", "Delhi"]
 }
 
----
+```
 
 
 ### df.head()
 Purpose
-
+```
 Displays the first 5 rows of the DataFrame by default.
+```
+## Why it is useful
+```
+- Quickly understand the structure of the dataset
 
-Why it is useful
-
-Quickly understand the structure of the dataset
-
-Check column names and sample values
-
+- Check column names and sample values
+```
 Example:
-
+```
 df.head()
-
+```
 You can also specify the number of rows:
-
+```
 
 df.head(2)
 
+```
 
----
-**df.tail()**
+### df.tail()
 Purpose
+```
 Displays the last 5 rows of the DataFrame by default.
-
-Why it is useful
+```
+## Why it is useful
+```
 Helpful when checking appended or recent data
 
 Useful in time-series or log datasets
-
+```
 Example:
-
+```
 df.tail()
-
+```
 #any 2 random from last
+```
 df.tail(2)
+```
 
-
-**df.info()**
-Purpose
+### df.info()
+**Purpose**
+```
 Provides a summary of the DataFrame, including:
 
-Column names
+- Column names
 
-Data types
+- Data types
 
-Non-null counts
+- Non-null counts
 
-Memory usage
+- Memory usage
+```
+ **Why it is useful**
+```
+- Detect missing values
 
-Why it is useful
-Detect missing values
+- Understand data types before analysis
 
-Understand data types before analysis
-
-Identify columns needing cleaning
-
-Example :
-
+- Identify columns needing cleaning
+```
+ **Example** :
+```
 df.info()
+```
+### df.describe()
 
-**df.describe()**
-
-Purpose
+**Purpose**
+```
 Generates statistical summary for numerical columns.
 
 Includes:
-count
+- count
 
-mean
+- mean
 
-standard deviation
+- standard deviation
 
-min
+- min
 
-max
+- max
 
-quartiles (25%, 50%, 75%)
-
-Example:
-
+- quartiles (25%, 50%, 75%)
+```
+**Example:**
+```
 df.describe()
+```
 This works only on numeric columns by default.
-
+```
 df.describe(include="O")
-Purpose
+```
+**Purpose**
 Generates summary statistics only for object (string) columns.
 
-Why it is useful
-Analyze categorical data
+**Why it is useful**
+- Analyze categorical data
 
-Find most frequent values
+- Find most frequent values
 
-Understand data distribution in text columns
+- Understand data distribution in text columns
 
 Statistics included:
-count
+- count
 
-unique
+- unique
 
-top (most frequent value)
+- top (most frequent value)
 
-freq (frequency of top value)
+- freq (frequency of top value)
 
 Example
-
+```
 df.describe(include="O")
+```
 This is especially useful in data preprocessing for ML, where categorical features need encoding.
 
 
 
 **Summary**
+
 In this session, I learned:
 
 What a Pandas DataFrame is
 
 How to inspect data using:
 
-head()
+- head()
 
-tail()
+- tail()
 
-info()
+- info()
 
-describe()
+- describe()
 
 How to analyze numerical and categorical data separately
 
