@@ -54,8 +54,8 @@ import pandas as pd
 
 s = pd.Series([10, 20, 30, 40])
 print(s)
-
-    2.** DataFrame**
+```
+## DataFrame
 
 Two-dimensional labeled data
 
@@ -64,6 +64,7 @@ Rows + Columns
 Similar to a spreadsheet or table
 
 Example:
+```
 import pandas as pd
 
 data = {
@@ -74,30 +75,30 @@ data = {
 
 df = pd.DataFrame(data)
 print(df)
-
+```
 **Why Pandas is Powerful**
 
-Easy data loading (CSV, Excel, JSON, SQL)
+- Easy data loading (CSV, Excel, JSON, SQL)
 
-Handles missing data efficiently
+- Handles missing data efficiently
 
-Fast filtering and slicing
+- Fast filtering and slicing
 
-Built-in statistical operations
+- Built-in statistical operations
 
-Works seamlessly with NumPy & Matplotlib
+- Works seamlessly with NumPy & Matplotlib
 
  **Real-World Use Cases**
 
-Student performance analysis
+- Student performance analysis
 
-Sales and finance data
+- Sales and finance data
 
-Healthcare datasets
+- Healthcare datasets
 
-Machine learning preprocessing
+- Machine learning preprocessing
 
-Business intelligence dashboards
+- Business intelligence dashboards
 
  **Key Takeaways**
 ✔ Pandas is essential for data analysis
