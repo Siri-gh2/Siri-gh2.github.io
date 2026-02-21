@@ -23,7 +23,7 @@ dtype refers to data values
 
 NOT the index
 
- 2. Checking the Type of the Variable
+ ##  🔹 2. Checking the Type of the Variable
 ```
 type(s)
 ```
@@ -33,7 +33,7 @@ pandas.core.series.Series
 ```
 This confirms that the object is a Pandas Series.
 
-🔹 3. Series Internal Structure
+## 🔹 3. Series Internal Structure
 
 The constructor looks like:
 ```
@@ -51,7 +51,7 @@ pd.Series(data=None, index=None, dtype=None, name=None, copy=False)
 
 Understanding constructor helps in controlled creation.
 
-4. Printing Only Data (Without Index)
+## 🔹  4. Printing Only Data (Without Index)
 
 Sometimes we want only values printed.
 ```
@@ -73,23 +73,25 @@ Reports
 
 Logging outputs
 
-🔹 5. Range as Index
+## 🔹 5. Range as Index
+```
 s = pd.Series(["one", "two"], index=range(101,103), name="Numbers")
 print(s)
-
+```
 Output:
-
+```
 101    one
 102    two
 Name: Numbers, dtype: object
-
+```
 Important concept:
 
 range(x, y) includes x but excludes y.
 
-🔹 6. Understanding Name Attribute
+## 🔹 6. Understanding Name Attribute
+```
 s.name
-
+```
 Returns:
 
 Numbers
@@ -102,82 +104,79 @@ Improves structured output
 
 Useful in ML pipelines
 
-🔹 7. Slicing in Series
+## 🔹 7. Slicing in Series
 
 Slicing works differently depending on index type.
 
 Position-based slicing
+```
 s.iloc[0:2]
+```
 Label-based slicing
+```
 s.loc['a':'b']
+```
+**Key difference:**
 
-Key difference:
+- iloc excludes end index
 
-iloc excludes end index
+-loc includes end label
 
-loc includes end label
+- This difference is extremely important.
 
-This difference is extremely important.
-
-🔹 8. Multiple Value Access
+## 🔹 8. Multiple Value Access
 
 To access multiple labels:
-
+```
 s.loc[['a','b']]
-
+```
 Important:
 
 Always use double brackets [[]]
 
 Returns a Series
 
-🔹 9. Typecasting Before Creating Series
+## 🔹 9. Typecasting Before Creating Series
 
 Sets are unordered and cannot directly be used meaningfully.
-
+```
 vars = {"Siri", "Bhavs"}
 pd.Series(list(vars))
-
+```
 Convert set → list first.
 
-🔹 10. Data Type Promotion Reminder
+## 🔹 10. Data Type Promotion Reminder
 
 Mixed types promote to object:
-
+```
 pd.Series([10, 20.5, "Hello"])
-
+```
 Output dtype:
-
+```
 object
-
+```
 Precedence:
-
+```
 object > float > int > bool
-What I Understood Today
+```
+**What I Understood Today**
 
-Series constructor structure
+- Series constructor structure
 
-dtype vs type()
+- dtype vs type()
 
-Name attribute usage
+- Name attribute usage
 
-to_string formatting
+- to_string formatting
 
-Range indexing behavior
+- Range indexing behavior
 
-loc vs iloc slicing difference
+- loc vs iloc slicing difference
 
-Multiple label access
+- Multiple label access
 
-Typecasting rules
+- Typecasting rules
 
-Reflection
-
-Series may look small, but:
-
-Incorrect indexing
-
-Wrong dtype assumptions
 
 Confusion between loc and iloc
 
